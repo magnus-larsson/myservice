@@ -1,0 +1,57 @@
+FROM ghcr.io/graalvm/graalvm-ce:ol8-java17-22.1.0 as builder
+
+# Install the native compiler
+RUN gu install native-image
+
+# By default "." seems to be "/app"
+WORKDIR .
+
+ADD gradle gradle
+ADD gradlew gradlew
+
+# Download the gradle distribution
+RUN ./gradlew --version
+
+ADD settings.gradle settings.gradle
+ADD build.gradle build.gradle
+
+# Resolve dependencies
+RUN ./gradlew dependencies
+
+ADD src src
+
+RUN ./gradlew nativeCompile
+
+#RUN export BP_NATIVE_IMAGE_BUILD_ARGUMENTS=-H:+StaticExecutableWithDynamicLibC && \
+#    echo $BP_NATIVE_IMAGE_BUILD_ARGUMENTS && \
+#    ./gradlew nativeCompile
+
+
+RUN pwd
+RUN ls -al build/native/nativeCompile
+
+# FROM scratch as runtime-screatch
+# FROM gcr.io/distroless/base as runtime-distroless
+# FROM alpine as runtime-alpine
+# FROM busybox as runtime-busybox
+FROM ubuntu as runtime-ubuntu
+
+COPY --from=builder app/build/native/nativeCompile/myservice /myservice
+
+#RUN chmod u+x /myservice
+#RUN pwd
+#RUN ls -al /myservice
+
+#CMD ["/myservice"]
+ENTRYPOINT ["/myservice"]
+
+#FROM adoptopenjdk:16_36-jre-hotspot
+#WORKDIR application
+#COPY --from=builder extracted/dependencies/ ./
+#COPY --from=builder extracted/spring-boot-loader/ ./
+#COPY --from=builder extracted/snapshot-dependencies/ ./
+#COPY --from=builder extracted/application/ ./
+#
+#EXPOSE 8080
+#
+#ENTRYPOINT ["java", "org.springframework.boot.loader.JarLauncher"]

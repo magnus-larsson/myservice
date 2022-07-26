@@ -1,0 +1,15 @@
+FROM ghcr.io/graalvm/graalvm-ce:ol8-java17-22.1.0 as builder
+RUN gu install native-image
+
+COPY build/libs/myservice-0.0.1-SNAPSHOT.jar /build/app.jar
+RUN cd /build && native-image -jar app.jar -H:Name=output
+# --static
+RUN ls -al /build/output
+
+# FROM scratch as runtime-scratch
+# FROM alpine as runtime-alpine
+FROM ubuntu as runtime-ubuntu
+
+COPY --from=builder /build/output /opt/output
+#CMD ["/opt/output"]
+#ENTRYPOINT ["/opt/output"]

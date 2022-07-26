@@ -29,11 +29,12 @@ public class MyserviceApplication {
 			} else {
 				System.out.println(restTemplate.getForObject("http://localhost:" + myServerPort + "/actuator/health", String.class));
 				System.out.println(restTemplate.getForObject("http://localhost:" + myServerPort + "/actuator/info", String.class));
-				try {
-					System.out.println(restTemplate.getForObject("http://localhost:" + myServerPort + "/backendA/failure", String.class));
-				} catch (RuntimeException e) {
-					System.out.println("FAILURE:" + e.getMessage());
-				}
+// TO VERBOSE OUTPUT...
+//				try {
+//					System.out.println(restTemplate.getForObject("http://localhost:" + myServerPort + "/backendA/failure", String.class));
+//				} catch (RuntimeException e) {
+//					System.out.println("FAILURE:" + e.getMessage());
+//				}
 				System.out.println(restTemplate.getForObject("http://localhost:" + myServerPort + "/backendA/success", String.class));
 				System.out.println("### V1, STARTUP TESTS RUN OK ###");
 			}
