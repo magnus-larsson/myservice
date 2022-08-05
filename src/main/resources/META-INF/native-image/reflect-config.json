@@ -481,6 +481,15 @@
   ]
 },
 {
+  "name":"io.netty.resolver.dns.DnsNameResolverBuilder"
+},
+{
+  "name":"io.netty.resolver.dns.DnsServerAddressStreamProviders"
+},
+{
+  "name":"io.netty.resolver.dns.DnsServerAddressStreamProviders$1"
+},
+{
   "name":"io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider",
   "methods":[{"name":"<init>","parameterTypes":[] }]
 },
@@ -494,6 +503,9 @@
 {
   "name":"io.netty.util.ReferenceCountUtil",
   "queryAllDeclaredMethods":true
+},
+{
+  "name":"io.netty.util.internal.NativeLibraryLoader"
 },
 {
   "name":"io.netty.util.internal.NativeLibraryUtil",
@@ -619,6 +631,13 @@
   "queryAllPublicMethods":true
 },
 {
+  "name":"java.lang.ProcessHandle",
+  "methods":[
+    {"name":"current","parameterTypes":[] }, 
+    {"name":"pid","parameterTypes":[] }
+  ]
+},
+{
   "name":"java.lang.Runtime",
   "methods":[{"name":"version","parameterTypes":[] }]
 },
@@ -640,6 +659,10 @@
 {
   "name":"java.lang.System",
   "methods":[{"name":"getSecurityManager","parameterTypes":[] }]
+},
+{
+  "name":"java.lang.Throwable",
+  "methods":[{"name":"getSuppressed","parameterTypes":[] }]
 },
 {
   "name":"java.lang.Void",
@@ -699,10 +722,7 @@
 },
 {
   "name":"java.lang.management.RuntimeMXBean",
-  "methods":[
-    {"name":"getInputArguments","parameterTypes":[] }, 
-    {"name":"getName","parameterTypes":[] }
-  ]
+  "methods":[{"name":"getInputArguments","parameterTypes":[] }]
 },
 {
   "name":"java.lang.reflect.AnnotatedElement",
@@ -711,6 +731,9 @@
 {
   "name":"java.lang.reflect.AnnotatedType",
   "queriedMethods":[{"name":"getType","parameterTypes":[] }]
+},
+{
+  "name":"java.lang.reflect.Constructor"
 },
 {
   "name":"java.lang.reflect.Executable",
@@ -723,6 +746,9 @@
 {
   "name":"java.lang.reflect.GenericDeclaration",
   "queryAllPublicMethods":true
+},
+{
+  "name":"java.lang.reflect.Method"
 },
 {
   "name":"java.lang.reflect.Parameter",
@@ -783,7 +809,7 @@
 },
 {
   "name":"java.nio.Bits",
-  "queriedMethods":[{"name":"unaligned","parameterTypes":[] }]
+  "fields":[{"name":"UNALIGNED"}]
 },
 {
   "name":"java.nio.Buffer",
@@ -827,6 +853,9 @@
   "name":"java.security.SecurityPermission"
 },
 {
+  "name":"java.util.ArrayList"
+},
+{
   "name":"java.util.Date"
 },
 {
@@ -837,8 +866,7 @@
   "name":"java.util.HashSet"
 },
 {
-  "name":"java.util.LinkedHashSet",
-  "methods":[{"name":"<init>","parameterTypes":[] }]
+  "name":"java.util.LinkedHashSet"
 },
 {
   "name":"java.util.PropertyPermission"
@@ -905,6 +933,18 @@
 {
   "name":"jdk.internal.misc.Unsafe",
   "methods":[{"name":"getUnsafe","parameterTypes":[] }]
+},
+{
+  "name":"jdk.internal.reflect.DelegatingConstructorAccessorImpl"
+},
+{
+  "name":"jdk.internal.reflect.DelegatingMethodAccessorImpl"
+},
+{
+  "name":"jdk.internal.reflect.NativeConstructorAccessorImpl"
+},
+{
+  "name":"jdk.internal.reflect.NativeMethodAccessorImpl"
 },
 {
   "name":"org.apache.logging.log4j.spi.ExtendedLogger"
@@ -1232,7 +1272,7 @@
   "queryAllDeclaredConstructors":true,
   "methods":[
     {"name":"<init>","parameterTypes":[] }, 
-    {"name":"healthContributorRegistry","parameterTypes":["org.springframework.context.ApplicationContext","org.springframework.boot.actuate.health.HealthEndpointGroups"] }, 
+    {"name":"healthContributorRegistry","parameterTypes":["org.springframework.context.ApplicationContext","org.springframework.boot.actuate.health.HealthEndpointGroups","java.util.Map","java.util.Map"] }, 
     {"name":"healthEndpoint","parameterTypes":["org.springframework.boot.actuate.health.HealthContributorRegistry","org.springframework.boot.actuate.health.HealthEndpointGroups","org.springframework.boot.actuate.autoconfigure.health.HealthEndpointProperties"] }, 
     {"name":"healthEndpointGroups","parameterTypes":["org.springframework.context.ApplicationContext","org.springframework.boot.actuate.autoconfigure.health.HealthEndpointProperties"] }, 
     {"name":"healthEndpointGroupsBeanPostProcessor","parameterTypes":["org.springframework.beans.factory.ObjectProvider"] }, 
@@ -2358,7 +2398,7 @@
   ]
 },
 {
-  "name":"org.springframework.boot.autoconfigure.http.codec.CodecsAutoConfiguration$DefaultCodecsConfiguration$$Lambda$792/0x000000080101fc30",
+  "name":"org.springframework.boot.autoconfigure.http.codec.CodecsAutoConfiguration$DefaultCodecsConfiguration$$Lambda$792/0x00000008010129e0",
   "allDeclaredFields":true,
   "queryAllDeclaredMethods":true,
   "queryAllPublicMethods":true
@@ -2375,7 +2415,7 @@
   ]
 },
 {
-  "name":"org.springframework.boot.autoconfigure.http.codec.CodecsAutoConfiguration$JacksonCodecConfiguration$$Lambda$793/0x000000080101a000",
+  "name":"org.springframework.boot.autoconfigure.http.codec.CodecsAutoConfiguration$JacksonCodecConfiguration$$Lambda$793/0x0000000801012c08",
   "allDeclaredFields":true,
   "queryAllDeclaredMethods":true,
   "queryAllPublicMethods":true
@@ -2698,7 +2738,7 @@
   ]
 },
 {
-  "name":"org.springframework.boot.autoconfigure.web.reactive.ReactiveMultipartAutoConfiguration$$Lambda$794/0x000000080101a228",
+  "name":"org.springframework.boot.autoconfigure.web.reactive.ReactiveMultipartAutoConfiguration$$Lambda$794/0x0000000801012e30",
   "allDeclaredFields":true,
   "queryAllDeclaredMethods":true,
   "queryAllPublicMethods":true
@@ -3172,7 +3212,7 @@
   "queryAllPublicMethods":true
 },
 {
-  "name":"org.springframework.boot.validation.beanvalidation.MethodValidationExcludeFilter$$Lambda$785/0x0000000801012358",
+  "name":"org.springframework.boot.validation.beanvalidation.MethodValidationExcludeFilter$$Lambda$785/0x000000080100b020",
   "allDeclaredFields":true,
   "queryAllDeclaredMethods":true,
   "queryAllPublicMethods":true
@@ -3691,7 +3731,7 @@
   "queryAllPublicMethods":true
 },
 {
-  "name":"org.springframework.web.reactive.accept.RequestedContentTypeResolverBuilder$$Lambda$848/0x0000000801038dc8",
+  "name":"org.springframework.web.reactive.accept.RequestedContentTypeResolverBuilder$$Lambda$848/0x0000000801031b80",
   "allDeclaredFields":true,
   "queryAllDeclaredMethods":true,
   "queryAllPublicMethods":true
@@ -3951,7 +3991,19 @@
   "name":"reactor.core.publisher.Flux"
 },
 {
+  "name":"reactor.core.publisher.FluxRetryWhen"
+},
+{
+  "name":"reactor.core.publisher.InternalMonoOperator"
+},
+{
   "name":"reactor.core.publisher.Mono"
+},
+{
+  "name":"reactor.core.publisher.MonoCreate"
+},
+{
+  "name":"reactor.core.publisher.MonoRetryWhen"
 },
 {
   "name":"reactor.netty.ChannelOperationsId"
@@ -3966,7 +4018,16 @@
   ]
 },
 {
+  "name":"reactor.netty.http.HttpResources"
+},
+{
   "name":"reactor.netty.http.client.HttpClient"
+},
+{
+  "name":"reactor.netty.http.client.HttpClientConfig"
+},
+{
+  "name":"reactor.netty.http.client.HttpClientConnect$MonoHttpConnect"
 },
 {
   "name":"reactor.netty.http.server.HttpServer"
@@ -3984,6 +4045,15 @@
 },
 {
   "name":"reactor.netty.resources.DefaultPooledConnectionProvider$PooledConnectionAllocator$PooledConnectionInitializer"
+},
+{
+  "name":"reactor.netty.tcp.TcpResources"
+},
+{
+  "name":"reactor.netty.transport.ClientTransportConfig"
+},
+{
+  "name":"reactor.netty.transport.NameResolverProvider"
 },
 {
   "name":"reactor.netty.transport.ServerTransport$Acceptor",
@@ -4011,7 +4081,7 @@
   ]
 },
 {
-  "name":"se.magnus.myservice.MyserviceApplication$$EnhancerBySpringCGLIB$$767e183b",
+  "name":"se.magnus.myservice.MyserviceApplication$$EnhancerBySpringCGLIB$$97b78743",
   "allDeclaredFields":true,
   "queryAllDeclaredMethods":true,
   "queryAllPublicMethods":true,
@@ -4023,7 +4093,7 @@
   ]
 },
 {
-  "name":"se.magnus.myservice.MyserviceApplication$$EnhancerBySpringCGLIB$$767e183b$$FastClassBySpringCGLIB$$38bbc377",
+  "name":"se.magnus.myservice.MyserviceApplication$$EnhancerBySpringCGLIB$$97b78743$$FastClassBySpringCGLIB$$843facc5",
   "methods":[{"name":"<init>","parameterTypes":["java.lang.Class"] }]
 },
 {
@@ -4031,7 +4101,7 @@
   "methods":[{"name":"<init>","parameterTypes":["java.lang.Class"] }]
 },
 {
-  "name":"se.magnus.myservice.MyserviceApplication$$Lambda$784/0x0000000801012130",
+  "name":"se.magnus.myservice.MyserviceApplication$$Lambda$784/0x000000080100adf8",
   "allDeclaredFields":true,
   "queryAllDeclaredMethods":true,
   "queryAllPublicMethods":true
