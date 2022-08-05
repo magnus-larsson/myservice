@@ -27,8 +27,9 @@ public class MyserviceApplication {
 			if (myServerPort == 0) {
 				System.out.println("Disabled under tests...");
 			} else {
-				System.out.println(restTemplate.getForObject("http://localhost:" + myServerPort + "/actuator/health", String.class));
-				System.out.println(restTemplate.getForObject("http://localhost:" + myServerPort + "/actuator/info", String.class));
+				System.out.println("Health: " + restTemplate.getForObject("http://localhost:" + myServerPort + "/actuator/health", String.class));
+				System.out.println("Info: " + restTemplate.getForObject("http://localhost:" + myServerPort + "/actuator/info", String.class));
+				System.out.println("OpenAPI: " + restTemplate.getForObject("http://localhost:" + myServerPort + "/v3/api-docs ", String.class));
 			}
 		};
 	}

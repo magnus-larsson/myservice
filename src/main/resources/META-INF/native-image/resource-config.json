@@ -26,6 +26,9 @@
       "pattern":"\\Qapplication.properties\\E"
     }, 
     {
+      "pattern":"\\Qio/swagger/v3/oas/annotations/Hidden.class\\E"
+    }, 
+    {
       "pattern":"\\Qmockito-extensions/org.mockito.plugins.MockResolver\\E"
     }, 
     {
@@ -35,10 +38,133 @@
       "pattern":"\\Qorg/slf4j/impl/StaticLoggerBinder.class\\E"
     }, 
     {
+      "pattern":"\\Qorg/springdoc/core/AbstractSwaggerUiConfigProperties$Direction.class\\E"
+    }, 
+    {
+      "pattern":"\\Qorg/springdoc/core/AbstractSwaggerUiConfigProperties$SwaggerUrl.class\\E"
+    }, 
+    {
+      "pattern":"\\Qorg/springdoc/core/AbstractSwaggerUiConfigProperties.class\\E"
+    }, 
+    {
+      "pattern":"\\Qorg/springdoc/core/CacheOrGroupedOpenApiCondition$OnCacheDisabled.class\\E"
+    }, 
+    {
+      "pattern":"\\Qorg/springdoc/core/CacheOrGroupedOpenApiCondition$OnMultipleOpenApiSupportCondition.class\\E"
+    }, 
+    {
+      "pattern":"\\Qorg/springdoc/core/CacheOrGroupedOpenApiCondition.class\\E"
+    }, 
+    {
+      "pattern":"\\Qorg/springdoc/core/MultipleOpenApiGroupsCondition$OnGroupConfigProperty.class\\E"
+    }, 
+    {
+      "pattern":"\\Qorg/springdoc/core/MultipleOpenApiGroupsCondition$OnGroupedOpenApiBean.class\\E"
+    }, 
+    {
+      "pattern":"\\Qorg/springdoc/core/MultipleOpenApiGroupsCondition.class\\E"
+    }, 
+    {
+      "pattern":"\\Qorg/springdoc/core/MultipleOpenApiSupportCondition$OnActuatorDifferentPort.class\\E"
+    }, 
+    {
+      "pattern":"\\Qorg/springdoc/core/MultipleOpenApiSupportCondition$OnMultipleOpenApiSupportCondition.class\\E"
+    }, 
+    {
+      "pattern":"\\Qorg/springdoc/core/MultipleOpenApiSupportCondition.class\\E"
+    }, 
+    {
+      "pattern":"\\Qorg/springdoc/core/SpringDocConfigProperties$ApiDocs.class\\E"
+    }, 
+    {
+      "pattern":"\\Qorg/springdoc/core/SpringDocConfigProperties$Cache.class\\E"
+    }, 
+    {
+      "pattern":"\\Qorg/springdoc/core/SpringDocConfigProperties$GroupConfig.class\\E"
+    }, 
+    {
+      "pattern":"\\Qorg/springdoc/core/SpringDocConfigProperties$Groups.class\\E"
+    }, 
+    {
+      "pattern":"\\Qorg/springdoc/core/SpringDocConfigProperties$ModelConverters.class\\E"
+    }, 
+    {
+      "pattern":"\\Qorg/springdoc/core/SpringDocConfigProperties$Webjars.class\\E"
+    }, 
+    {
+      "pattern":"\\Qorg/springdoc/core/SpringDocConfigProperties.class\\E"
+    }, 
+    {
+      "pattern":"\\Qorg/springdoc/core/SpringDocConfiguration$OpenApiResourceAdvice.class\\E"
+    }, 
+    {
+      "pattern":"\\Qorg/springdoc/core/SpringDocConfiguration$SpringDocActuatorConfiguration.class\\E"
+    }, 
+    {
+      "pattern":"\\Qorg/springdoc/core/SpringDocConfiguration$SpringDocFunctionCatalogConfiguration.class\\E"
+    }, 
+    {
+      "pattern":"\\Qorg/springdoc/core/SpringDocConfiguration$SpringDocPageableConfiguration.class\\E"
+    }, 
+    {
+      "pattern":"\\Qorg/springdoc/core/SpringDocConfiguration$SpringDocRepositoryRestConfiguration.class\\E"
+    }, 
+    {
+      "pattern":"\\Qorg/springdoc/core/SpringDocConfiguration$SpringDocSortConfiguration.class\\E"
+    }, 
+    {
+      "pattern":"\\Qorg/springdoc/core/SpringDocConfiguration$SpringDocSpringDataWebPropertiesProvider.class\\E"
+    }, 
+    {
+      "pattern":"\\Qorg/springdoc/core/SpringDocConfiguration$WebConversionServiceConfiguration.class\\E"
+    }, 
+    {
+      "pattern":"\\Qorg/springdoc/core/SpringDocConfiguration.class\\E"
+    }, 
+    {
+      "pattern":"\\Qorg/springdoc/core/SwaggerUiConfigParameters.class\\E"
+    }, 
+    {
+      "pattern":"\\Qorg/springdoc/core/SwaggerUiConfigProperties$Csrf.class\\E"
+    }, 
+    {
+      "pattern":"\\Qorg/springdoc/core/SwaggerUiConfigProperties$SyntaxHighlight.class\\E"
+    }, 
+    {
+      "pattern":"\\Qorg/springdoc/core/SwaggerUiConfigProperties.class\\E"
+    }, 
+    {
+      "pattern":"\\Qorg/springdoc/core/SwaggerUiOAuthProperties.class\\E"
+    }, 
+    {
+      "pattern":"\\Qorg/springdoc/nativex/core/SpringDocHints.class\\E"
+    }, 
+    {
+      "pattern":"\\Qorg/springdoc/webflux/core/MultipleOpenApiSupportConfiguration$SpringDocWebMvcActuatorDifferentConfiguration.class\\E"
+    }, 
+    {
+      "pattern":"\\Qorg/springdoc/webflux/core/MultipleOpenApiSupportConfiguration.class\\E"
+    }, 
+    {
+      "pattern":"\\Qorg/springdoc/webflux/core/SpringDocWebFluxConfiguration$SpringDocWebFluxActuatorConfiguration.class\\E"
+    }, 
+    {
+      "pattern":"\\Qorg/springdoc/webflux/core/SpringDocWebFluxConfiguration.class\\E"
+    }, 
+    {
+      "pattern":"\\Qorg/springdoc/webflux/ui/SwaggerConfig$SwaggerActuatorWelcomeConfiguration.class\\E"
+    }, 
+    {
+      "pattern":"\\Qorg/springdoc/webflux/ui/SwaggerConfig.class\\E"
+    }, 
+    {
       "pattern":"\\Qorg/springframework/beans/factory/Aware.class\\E"
     }, 
     {
       "pattern":"\\Qorg/springframework/beans/factory/BeanFactoryAware.class\\E"
+    }, 
+    {
+      "pattern":"\\Qorg/springframework/beans/factory/InitializingBean.class\\E"
     }, 
     {
       "pattern":"\\Qorg/springframework/beans/factory/SmartInitializingSingleton.class\\E"
@@ -485,6 +611,12 @@
       "pattern":"\\Qorg/springframework/boot/autoconfigure/task/TaskSchedulingAutoConfiguration.class\\E"
     }, 
     {
+      "pattern":"\\Qorg/springframework/boot/autoconfigure/validation/ValidationAutoConfiguration.class\\E"
+    }, 
+    {
+      "pattern":"\\Qorg/springframework/boot/autoconfigure/web/ConditionalOnEnabledResourceChain.class\\E"
+    }, 
+    {
       "pattern":"\\Qorg/springframework/boot/autoconfigure/web/client/RestTemplateAutoConfiguration$NotReactiveWebApplicationCondition$ReactiveWebApplication.class\\E"
     }, 
     {
@@ -578,6 +710,9 @@
       "pattern":"\\Qorg/springframework/boot/autoconfigure/web/reactive/function/client/WebClientAutoConfiguration.class\\E"
     }, 
     {
+      "pattern":"\\Qorg/springframework/boot/context/properties/ConfigurationProperties.class\\E"
+    }, 
+    {
       "pattern":"\\Qorg/springframework/boot/context/properties/EnableConfigurationProperties.class\\E"
     }, 
     {
@@ -605,6 +740,9 @@
       "pattern":"\\Qorg/springframework/context/annotation/ImportBeanDefinitionRegistrar.class\\E"
     }, 
     {
+      "pattern":"\\Qorg/springframework/context/annotation/Lazy.class\\E"
+    }, 
+    {
       "pattern":"\\Qorg/springframework/core/Ordered.class\\E"
     }, 
     {
@@ -612,6 +750,24 @@
     }, 
     {
       "pattern":"\\Qorg/springframework/http/codec/CodecConfigurer.properties\\E"
+    }, 
+    {
+      "pattern":"\\Qorg/springframework/nativex/hint/JdkProxyHints.class\\E"
+    }, 
+    {
+      "pattern":"\\Qorg/springframework/nativex/hint/ResourcesHints.class\\E"
+    }, 
+    {
+      "pattern":"\\Qorg/springframework/nativex/hint/TypeHints.class\\E"
+    }, 
+    {
+      "pattern":"\\Qorg/springframework/web/bind/annotation/ControllerAdvice.class\\E"
+    }, 
+    {
+      "pattern":"\\Qorg/springframework/web/bind/annotation/ResponseBody.class\\E"
+    }, 
+    {
+      "pattern":"\\Qorg/springframework/web/bind/annotation/RestControllerAdvice.class\\E"
     }, 
     {
       "pattern":"\\Qorg/springframework/web/reactive/config/DelegatingWebFluxConfiguration.class\\E"
@@ -636,6 +792,9 @@
     }, 
     {
       "pattern":"\\Qse/magnus/myservice/\\E"
+    }, 
+    {
+      "pattern":"\\Qspringdoc.config.properties\\E"
     }
   ]},
   "bundles":[]

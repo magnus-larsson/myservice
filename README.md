@@ -11,9 +11,3 @@ Try native image:
 ```
 ./build/native/nativeCompile/myservice
 ```
-
-Try Docker native image:
-
-```
-docker run --rm magnus/myservice:latest
-```
