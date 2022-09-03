@@ -5,7 +5,16 @@ import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.nativex.hint.TypeAccess;
+import org.springframework.nativex.hint.TypeHint;
 import org.springframework.web.client.RestTemplate;
+
+@TypeHint(
+	types = {
+		java.lang.module.ModuleReader.class
+	},
+	access = { TypeAccess.PUBLIC_CONSTRUCTORS, TypeAccess.PUBLIC_METHODS }
+)
 
 @SpringBootApplication
 public class MyserviceApplication {
@@ -29,7 +38,7 @@ public class MyserviceApplication {
 			} else {
 				System.out.println("Health: " + restTemplate.getForObject("http://localhost:" + myServerPort + "/actuator/health", String.class));
 				System.out.println("Info: " + restTemplate.getForObject("http://localhost:" + myServerPort + "/actuator/info", String.class));
-				System.out.println("OpenAPI: " + restTemplate.getForObject("http://localhost:" + myServerPort + "/v3/api-docs ", String.class));
+				System.out.println("OpenAPI: " + restTemplate.getForObject("http://localhost:" + myServerPort + "/v3/api-docs", String.class));
 			}
 		};
 	}

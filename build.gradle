@@ -30,6 +30,10 @@ springBoot {
 	buildInfo()
 }
 
+bootRun {
+	systemProperty 'springAot', 'true'
+}
+
 tasks.named('test') {
 	useJUnitPlatform()
 	jvmArgs '-agentlib:native-image-agent=access-filter-file=src/test/resources/access-filter.json,config-output-dir=src/main/resources/META-INF/native-image'
